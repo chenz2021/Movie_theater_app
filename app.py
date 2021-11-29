@@ -1,9 +1,9 @@
 import os
 from flask import Flask, request, jsonify, abort
+# from flask import render_template, session, url_for, redirect
 from sqlalchemy import exc
 import json
 from flask_cors import CORS
-import sys
 from models import db_setup, Theater, Movie, Showtime
 from auth import AuthError, requires_auth
 
@@ -14,6 +14,15 @@ def create_app(test_config=None):
     CORS(app)
 
     # db_drop_and_create_all()
+    @app.after_request
+    def after_request(response):
+
+        response.headers.add('Access-Control-Allow-Headers',
+                             'Content-Type,Authorization,true')
+
+        response.headers.add('Access-Control-Allow-Methods',
+                             'GET,PATCH,POST,DELETE,OPTIONS')
+        return response
 
     @app.route('/')
     def index():
