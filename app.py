@@ -86,7 +86,6 @@ def create_app(test_config=None):
         except Exception:
             abort(400)
 
-
     @app.route('/movies/<movie_id>', methods=['DELETE'])
     @requires_auth('delete:movies')
     def delete_movies(jwt, movie_id):
@@ -298,11 +297,7 @@ def create_app(test_config=None):
     return app
 
 
-if __name__ == "__main__":
-    app = create_app()
-    app.debug = True
-    app.run()
+APP = create_app()
 
-
-# if __name__ == '__main__':
-#     APP.run(host='0.0.0.0', port=8080, debug=True)
+if __name__ == '__main__':
+    APP.run(host='0.0.0.0', port=8080, debug=True)
