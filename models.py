@@ -3,7 +3,8 @@ from flask_migrate import Migrate
 import os
 
 
-DB_PATH = "postgres://gfcflfufocxlyz:6f25ba25448586e64005868c0e09bc06e5c21d6b141d774e7c9b4db9f85f13db@ec2-18-210-159-154.compute-1.amazonaws.com:5432/df9ngni1g2mbok"
+DB_PATH = "postgresql://gfcflfufocxlyz:6f25ba25448586e64005868c0e09bc06e5c21d6b141d774e7c9b4db9f85f13db@ec2-18-210" \
+          "-159-154.compute-1.amazonaws.com:5432/df9ngni1g2mbok "
 db = SQLAlchemy()
 
 
