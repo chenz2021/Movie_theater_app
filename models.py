@@ -2,11 +2,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
 
-DB_HOST = os.getenv('DB_HOST', '127.0.0.1:5432')
-DB_USER = os.getenv('DB_USER', 'postgres')
-DB_PASSWORD = os.getenv('DB_PASSWORD', '1')
-DB_NAME = os.getenv('DB_NAME', 'theater')
-DB_PATH = 'postgresql+psycopg2://{}:{}@{}/{}'.format(DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
+
+DB_PATH = "postgres://gfcflfufocxlyz:6f25ba25448586e64005868c0e09bc06e5c21d6b141d774e7c9b4db9f85f13db@ec2-18-210-159-154.compute-1.amazonaws.com:5432/df9ngni1g2mbok"
 db = SQLAlchemy()
 
 
