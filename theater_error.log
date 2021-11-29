@@ -1,0 +1,81 @@
+2021-11-29 11:14:56,745 INFO:  * Restarting with stat
+2021-11-29 11:15:03,931 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:03] "GET / HTTP/1.1" 200 -
+2021-11-29 11:15:09,614 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:09] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:15:15,238 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:15] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:15:19,435 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:19] "GET /theaters/1 HTTP/1.1" 200 -
+2021-11-29 11:15:40,031 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:40] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:15:56,041 INFO: 127.0.0.1 - - [29/Nov/2021 11:15:56] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:16:03,901 INFO: 127.0.0.1 - - [29/Nov/2021 11:16:03] "GET /theaters/1 HTTP/1.1" 200 -
+2021-11-29 11:16:12,509 INFO: 127.0.0.1 - - [29/Nov/2021 11:16:12] "GET /movies/1 HTTP/1.1" 200 -
+2021-11-29 11:16:25,142 INFO: 127.0.0.1 - - [29/Nov/2021 11:16:25] "POST /movies HTTP/1.1" 200 -
+2021-11-29 11:16:47,716 INFO: 127.0.0.1 - - [29/Nov/2021 11:16:47] "[35m[1mPOST /theaters HTTP/1.1[0m" 500 -
+2021-11-29 11:17:54,577 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:17:54,777 INFO:  * Restarting with stat
+2021-11-29 11:18:00,257 INFO: 127.0.0.1 - - [29/Nov/2021 11:18:00] "POST /theaters HTTP/1.1" 200 -
+2021-11-29 11:18:24,302 INFO: 127.0.0.1 - - [29/Nov/2021 11:18:24] "DELETE /movies/3 HTTP/1.1" 200 -
+2021-11-29 11:18:35,774 INFO: 127.0.0.1 - - [29/Nov/2021 11:18:35] "DELETE /theaters/3 HTTP/1.1" 200 -
+2021-11-29 11:23:43,865 INFO: 127.0.0.1 - - [29/Nov/2021 11:23:43] "GET /theaters/1 HTTP/1.1" 200 -
+2021-11-29 11:23:46,680 INFO: 127.0.0.1 - - [29/Nov/2021 11:23:46] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:24:26,426 INFO: 127.0.0.1 - - [29/Nov/2021 11:24:26] "POST /theaters HTTP/1.1" 200 -
+2021-11-29 11:24:37,682 INFO: 127.0.0.1 - - [29/Nov/2021 11:24:37] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:25:25,180 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:25:25,337 INFO:  * Restarting with stat
+2021-11-29 11:25:33,488 INFO: 127.0.0.1 - - [29/Nov/2021 11:25:33] "POST /theaters HTTP/1.1" 200 -
+2021-11-29 11:25:39,174 INFO: 127.0.0.1 - - [29/Nov/2021 11:25:39] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:27:58,243 INFO: 127.0.0.1 - - [29/Nov/2021 11:27:58] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 11:28:10,277 INFO: 127.0.0.1 - - [29/Nov/2021 11:28:10] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 11:28:22,719 INFO: 127.0.0.1 - - [29/Nov/2021 11:28:22] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 11:28:40,986 INFO: 127.0.0.1 - - [29/Nov/2021 11:28:40] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:28:46,597 INFO: 127.0.0.1 - - [29/Nov/2021 11:28:46] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:28:52,161 INFO: 127.0.0.1 - - [29/Nov/2021 11:28:52] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 11:29:47,967 INFO: 127.0.0.1 - - [29/Nov/2021 11:29:47] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 11:31:25,523 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:31:25,680 INFO:  * Restarting with stat
+2021-11-29 11:31:29,968 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:31:30,204 INFO:  * Restarting with stat
+2021-11-29 11:32:38,890 INFO: 127.0.0.1 - - [29/Nov/2021 11:32:38] "[31m[1mPOST /showtimes/create HTTP/1.1[0m" 401 -
+2021-11-29 11:33:42,218 INFO: 127.0.0.1 - - [29/Nov/2021 11:33:42] "[31m[1mPOST /showtimes/create HTTP/1.1[0m" 400 -
+2021-11-29 11:34:41,595 INFO: 127.0.0.1 - - [29/Nov/2021 11:34:41] "POST /showtimes/create HTTP/1.1" 200 -
+2021-11-29 11:44:39,230 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:44:39,468 INFO:  * Restarting with stat
+2021-11-29 11:49:48,813 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 11:49:48,988 INFO:  * Restarting with stat
+2021-11-29 11:50:02,291 INFO: 127.0.0.1 - - [29/Nov/2021 11:50:02] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:51:01,548 INFO: 127.0.0.1 - - [29/Nov/2021 11:51:01] "[31m[1mPATCH /theaters/3 HTTP/1.1[0m" 401 -
+2021-11-29 11:51:53,309 INFO: 127.0.0.1 - - [29/Nov/2021 11:51:53] "[31m[1mPATCH /theaters/3 HTTP/1.1[0m" 403 -
+2021-11-29 11:53:32,443 INFO: 127.0.0.1 - - [29/Nov/2021 11:53:32] "[31m[1mPATCH /theaters/3 HTTP/1.1[0m" 403 -
+2021-11-29 11:56:47,526 INFO: 127.0.0.1 - - [29/Nov/2021 11:56:47] "[33mPATCH /theaters/3 HTTP/1.1[0m" 404 -
+2021-11-29 11:56:54,747 INFO: 127.0.0.1 - - [29/Nov/2021 11:56:54] "PATCH /theaters/2 HTTP/1.1" 200 -
+2021-11-29 11:57:07,565 INFO: 127.0.0.1 - - [29/Nov/2021 11:57:07] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:57:14,517 INFO: 127.0.0.1 - - [29/Nov/2021 11:57:14] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:57:56,612 INFO: 127.0.0.1 - - [29/Nov/2021 11:57:56] "[31m[1mPATCH /theaters/2 HTTP/1.1[0m" 401 -
+2021-11-29 11:58:15,077 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:15] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:58:21,699 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:21] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 11:58:27,233 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:27] "GET /theaters/1 HTTP/1.1" 200 -
+2021-11-29 11:58:35,672 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:35] "GET /movies/1 HTTP/1.1" 200 -
+2021-11-29 11:58:47,108 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:47] "POST /movies HTTP/1.1" 200 -
+2021-11-29 11:58:56,222 INFO: 127.0.0.1 - - [29/Nov/2021 11:58:56] "POST /theaters HTTP/1.1" 200 -
+2021-11-29 11:59:11,399 INFO: 127.0.0.1 - - [29/Nov/2021 11:59:11] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:59:28,392 INFO: 127.0.0.1 - - [29/Nov/2021 11:59:28] "DELETE /movies/2 HTTP/1.1" 200 -
+2021-11-29 11:59:32,837 INFO: 127.0.0.1 - - [29/Nov/2021 11:59:32] "GET /movies HTTP/1.1" 200 -
+2021-11-29 11:59:48,855 INFO: 127.0.0.1 - - [29/Nov/2021 11:59:48] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 12:00:05,135 INFO: 127.0.0.1 - - [29/Nov/2021 12:00:05] "DELETE /theaters/4 HTTP/1.1" 200 -
+2021-11-29 12:00:25,266 INFO: 127.0.0.1 - - [29/Nov/2021 12:00:25] "POST /movies/search HTTP/1.1" 200 -
+2021-11-29 12:00:43,403 INFO: 127.0.0.1 - - [29/Nov/2021 12:00:43] "GET /theaters HTTP/1.1" 200 -
+2021-11-29 12:00:47,525 INFO: 127.0.0.1 - - [29/Nov/2021 12:00:47] "GET /movies HTTP/1.1" 200 -
+2021-11-29 12:00:56,890 INFO: 127.0.0.1 - - [29/Nov/2021 12:00:56] "POST /showtimes/create HTTP/1.1" 200 -
+2021-11-29 12:01:05,216 INFO: 127.0.0.1 - - [29/Nov/2021 12:01:05] "GET /movies/4 HTTP/1.1" 200 -
+2021-11-29 12:04:45,578 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\test_app.py', reloading
+2021-11-29 12:04:45,818 INFO:  * Restarting with stat
+2021-11-29 12:05:12,104 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\test_app.py', reloading
+2021-11-29 12:05:12,314 INFO:  * Restarting with stat
+2021-11-29 12:09:50,049 INFO: 127.0.0.1 - - [29/Nov/2021 12:09:50] "GET /movies/4 HTTP/1.1" 200 -
+2021-11-29 12:09:58,928 INFO: 127.0.0.1 - - [29/Nov/2021 12:09:58] "GET /movies HTTP/1.1" 200 -
+2021-11-29 12:13:49,344 INFO: 127.0.0.1 - - [29/Nov/2021 12:13:49] "GET / HTTP/1.1" 200 -
+2021-11-29 12:31:18,102 INFO: 127.0.0.1 - - [29/Nov/2021 12:31:18] "GET / HTTP/1.1" 200 -
+2021-11-29 12:34:08,116 INFO:  * Detected change in 'C:\\Users\\zhouc\\Desktop\\FSND\\projects\\capstone\\starter\\app.py', reloading
+2021-11-29 12:34:08,313 INFO:  * Restarting with stat
+2021-11-29 12:47:19,667 INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-11-29 12:47:44,975 INFO: 127.0.0.1 - - [29/Nov/2021 12:47:44] "GET / HTTP/1.1" 200 -
+2021-11-29 12:47:45,102 INFO: 127.0.0.1 - - [29/Nov/2021 12:47:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-11-29 12:47:53,115 INFO: 127.0.0.1 - - [29/Nov/2021 12:47:53] "GET /movies HTTP/1.1" 200 -

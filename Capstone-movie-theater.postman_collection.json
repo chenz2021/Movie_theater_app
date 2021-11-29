@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "d838154b-5d6a-4b4f-af85-accc58fd7254",
+		"name": "Capstone-movie-theater",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"title\": \"Titanic\",\r\n            \"image_link\": \"https://www.imdb.com/title/tt0120338/mediaviewer/rm2647458304/\",\r\n            \"trailer\": \"https://www.imdb.com/video/vi907189785?playlistId=tt0120338&ref_=tt_pr_ov_vi\",\r\n            \"review\": \"https://www.imdb.com/title/tt0120338/\",\r\n            \"description\": \"Greatest love film ever!\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"AMC\",\r\n            \"city\": \"Boston\",\r\n            \"state\": \"MA\",\r\n            \"address\": \"some Rd\",\r\n            \"phone\": \"some number\",\r\n            \"website\": \"some website\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search_term\": \"a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/showtimes/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"movie_id\":2,\r\n    \"theater_id\":3,\r\n    \"start_time\":[\"11:00\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/showtimes/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"showtimes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/2",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"need to update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manager",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"title\": \"Titanic\",\r\n            \"image_link\": \"https://www.imdb.com/title/tt0120338/mediaviewer/rm2647458304/\",\r\n            \"trailer\": \"https://www.imdb.com/video/vi907189785?playlistId=tt0120338&ref_=tt_pr_ov_vi\",\r\n            \"review\": \"https://www.imdb.com/title/tt0120338/\",\r\n            \"description\": \"Greatest love film ever!\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"AMC\",\r\n            \"city\": \"Boston\",\r\n            \"state\": \"MA\",\r\n            \"address\": \"some Rd\",\r\n            \"phone\": \"some number\",\r\n            \"website\": \"some website\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"search_term\": \"a\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/movies/search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"movies",
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/showtimes/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"movie_id\":4,\r\n    \"theater_id\":2,\r\n    \"start_time\":[\"11:00\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/showtimes/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"showtimes",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/theaters/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlZ1MlVISE9tYjI0SHoxN2MwWXFNTCJ9.eyJpc3MiOiJodHRwczovL2Rldi02b2Fpd2p0ay51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDc3MzM3NzU1ODQzNTA5OTQ4NDEiLCJhdWQiOiJzaG93IiwiaWF0IjoxNjM4MjA0OTcyLCJleHAiOjE2MzgyOTEzNzIsImF6cCI6ImZZdW40YVV0c3FWaUoyamVEYWxidVRQUkZlRkU3NHBPIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6bW92aWVzIiwiZGVsZXRlOnRoZWF0ZXJzIiwicGF0Y2g6dGhlYXRlcnMiLCJwb3N0Om1vdmllcyIsInBvc3Q6c2hvd3RpbWVzIiwicG9zdDp0aGVhdGVycyJdfQ.be645kJ0sn1RbsZfB-3nXFbMOKGt3wpetiFxLmmkdxEv1pENKp2EL8PwMvBpIfnm2oNsT_BQttfMqUPXffgX6knCGlCSXgec4aOlCQAu3CkdcagLMyKBBRc1fe-Ft7WO29AV2fSh0fG9VAeveINjb7dpKT0SqPzuoVf7SbhbPOyQYryM2R8VztDz2uw2cwbHb1PVDmYVDocdZBm8xq2eAmkzJMmAQaI1NAQJ80azfWONUkYaoikIuHNdnELBIYZzjvniTkaVe5MX8SpN2x5ltTt-VlLtd26yjfjvkNn2SdH7hvP1MPPDXe7KFbJExaMQbrzc72h3xtEYgaE2HDBFaQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"need to update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/theaters/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"theaters",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
