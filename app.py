@@ -297,9 +297,11 @@ def create_app(test_config=None):
 
     return app
 
-# if __name__ == "__main__":
-#     app.debug = True
-#     app.run()
+
+if __name__ == "__main__":
+    app = create_app()
+    app.debug = True
+    app.run()
 
 
 # if __name__ == '__main__':
