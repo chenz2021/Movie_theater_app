@@ -272,21 +272,21 @@ def create_app(test_config=None):
             "message": "resource not found"
         }), 404
 
-    @app.errorhandler(401)
-    def unauthorized(error):
-        return jsonify({
-            "success": False,
-            "error": 401,
-            "message": "unauthorized"
-        }), 401
-
-    @app.errorhandler(403)
-    def forbidden(error):
-        return jsonify({
-            "success": False,
-            "error": 403,
-            "message": "forbidden"
-        }), 403
+    # @app.errorhandler(401)
+    # def unauthorized(error):
+    #     return jsonify({
+    #         "success": False,
+    #         "error": 401,
+    #         "message": "unauthorized"
+    #     }), 401
+    #
+    # @app.errorhandler(403)
+    # def forbidden(error):
+    #     return jsonify({
+    #         "success": False,
+    #         "error": 403,
+    #         "message": "forbidden"
+    #     }), 403
 
     @app.errorhandler(405)
     def method_not_allowed(error):
